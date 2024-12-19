@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <h1>Your Name</h1>
+      <h1>Joshua Mark Nanninga</h1>
       <nav>
         <ul className={styles.navList}>
           <li><Link to="/">Home</Link></li>

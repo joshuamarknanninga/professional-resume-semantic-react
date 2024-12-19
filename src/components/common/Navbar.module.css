@@ -9,11 +9,14 @@
     border-bottom: 1px solid #ddd;
   }
   
-  .logo a {
-    font-size: var(--font-size-large);
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintains aspect ratio */
   }
   
   .navLinks {
@@ -37,4 +40,21 @@
     background-color: rgba(0, 123, 255, 0.1);
     border-radius: var(--border-radius);
   }
+
+  @media (max-width: 768px) {
+    .logoImage {
+      height: 40px;
+    }
   
+    .navLinks {
+      gap: 15px; 
+    }
+  
+    .navbar {
+      padding: 10px 15px; 
+    }
+  
+    .navLinks li a {
+      font-size: 14px;
+    }
+  }

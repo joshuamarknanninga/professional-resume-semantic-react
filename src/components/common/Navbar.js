@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import useDarkMode from '../../hooks/useDarkMode';
 import Button from './Button';
+import logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useDarkMode();
@@ -13,6 +14,7 @@ const Navbar = () => {
     <nav className={styles.navbar} aria-label="Main Navigation">
       <div className={styles.logo}>
         <NavLink to="/">YourLogo</NavLink>
+        <img src={logo} alt="Your Company Logo" className={styles.logoImage} />
       </div>
       <ul className={styles.navLinks}>
         <li>
