@@ -16,22 +16,35 @@ const Navbar = () => {
       </div>
       <ul className={styles.navLinks}>
         <li>
-          <NavLink to="/" end activeClassName={styles.active}>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" activeClassName={styles.active}>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
             About
           </NavLink>
         </li>
         <li>
-          <NavLink to="/projects" activeClassName={styles.active}>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
             Projects
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" activeClassName={styles.active}>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
             Contact
           </NavLink>
         </li>
