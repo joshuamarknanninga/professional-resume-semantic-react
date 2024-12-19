@@ -1,0 +1,36 @@
+/* Define CSS variables for light and dark themes */
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    /* Add more variables as needed */
+  }
+  
+  [data-theme='dark'] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #1e90ff;
+    --secondary-color: #adb5bd;
+    /* Adjust variables for dark theme */
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add more global styles as needed */
+  
