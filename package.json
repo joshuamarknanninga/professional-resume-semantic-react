@@ -1,0 +1,17 @@
+{
+  "name": "professional-resume-semantic-react",
+  "version": "1.0.0",
+  "description": "This is my professional resume.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-router-dom": "^6.28.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5"
+  }
+}
