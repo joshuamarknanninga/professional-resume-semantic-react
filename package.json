@@ -1,8 +1,25 @@
 {
-  "name": "professional-resume-semantic-react",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "This is my professional resume.",
-  "main": "index.js",
+  "private": true,
+  "homepage": "https://yourusername.github.io/portfolio",
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.0.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.0.0",
+    "serve": "^14.0.0",
+    "source-map-explorer": "^2.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -11,16 +28,20 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lint": "eslint src/**/*.{js,jsx}",
-    "format": "prettier --write src/**/*.{js,jsx,css,md}"
+    "format": "prettier --write src/**/*.{js,jsx,css,md}",
+    "serve": "serve -s build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "emailjs-com": "^3.2.0",
-    "react-icons": "^5.4.0",
-    "react-router-dom": "^6.28.0",
-    "semantic-ui-css": "^2.5.0",
-    "semantic-ui-react": "^2.1.5"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
