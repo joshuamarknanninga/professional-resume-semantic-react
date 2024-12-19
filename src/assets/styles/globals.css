@@ -5,6 +5,8 @@
     --text-color: #000000;
     --primary-color: #007bff;
     --secondary-color: #6c757d;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
     /* Add more variables as needed */
   }
   
@@ -13,6 +15,8 @@
     --text-color: #ffffff;
     --primary-color: #1e90ff;
     --secondary-color: #adb5bd;
+    --link-color: #1e90ff;
+    --link-hover-color: #63b3ed;
     /* Adjust variables for dark theme */
   }
   
@@ -20,15 +24,17 @@
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   a {
-    color: var(--primary-color);
+    color: var(--link-color);
     text-decoration: none;
   }
   
   a:hover {
+    color: var(--link-hover-color);
     text-decoration: underline;
   }
   

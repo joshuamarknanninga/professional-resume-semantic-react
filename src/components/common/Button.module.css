@@ -1,0 +1,43 @@
+/* src/components/common/Button.module.css */
+
+.button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size-medium);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button.primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+  
+  .button.primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .button.secondary {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+  }
+  
+  .button.secondary:hover {
+    background-color: #545b62;
+  }
+  
+  .button.accent {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+  
+  .button.accent:hover {
+    background-color: #138496;
+  }
+  
+  .button:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+  

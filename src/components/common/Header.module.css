@@ -1,32 +1,41 @@
-/* src/components/common/Header.module.css */
+/* src/components/common/Navbar.module.css */
 
-.header {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: var(--spacing-sm) var(--spacing-md);
     background-color: var(--background-color);
     border-bottom: 1px solid #ddd;
   }
   
-  .navList {
+  .logo a {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .navLinks {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: var(--spacing-sm);
     margin: 0;
     padding: 0;
   }
   
-  .navList a {
+  .navLinks li a {
     text-decoration: none;
     color: var(--text-color);
-    font-weight: bold;
+    font-size: var(--font-size-medium);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    transition: color 0.3s ease, background-color 0.3s ease;
   }
   
-  .themeToggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
+  .navLinks li a:hover,
+  .navLinks li a.active {
+    color: var(--primary-color);
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: var(--border-radius);
   }
   

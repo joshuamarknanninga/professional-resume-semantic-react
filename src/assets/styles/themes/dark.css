@@ -1,0 +1,30 @@
+/* src/assets/styles/themes/dark.css */
+
+@import '../variables.css';
+
+/* Dark Theme Specific Styles */
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: lighten(var(--primary-color), 10%);
+}
+
+/* Additional dark theme styles can be added here */
