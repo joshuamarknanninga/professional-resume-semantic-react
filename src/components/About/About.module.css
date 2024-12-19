@@ -1,0 +1,21 @@
+.about {
+    padding: 2rem;
+    background-color: var(--background-color);
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .downloadButton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  

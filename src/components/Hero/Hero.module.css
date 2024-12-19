@@ -1,0 +1,21 @@
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+  
