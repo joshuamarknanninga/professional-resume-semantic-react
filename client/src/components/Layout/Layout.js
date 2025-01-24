@@ -1,7 +1,7 @@
 // src/components/Layout/Layout.js
 
 import React from 'react';
-import Navbar from '../common/Navbar';
+import Navbar from '../common/StyledNavbarEmotion';
 import Footer from '../common/Footer';
 import styles from './Layout.module.css';
 
